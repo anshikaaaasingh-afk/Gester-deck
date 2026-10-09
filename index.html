@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gesture Deck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="stage">
+    <div id="wrap">
+      <article id="slide" class="in"></article>
+    </div>
+  </main>
+
+  <div id="laser" hidden></div>
+
+  <header id="hud">
+    <span id="status" class="pill">Camera off</span>
+    <span id="counter" class="pill">1 / 1</span>
+  </header>
+  <div id="progress"></div>
+  <div id="toast" role="status"></div>
+
+  <aside id="preview">
+    <video id="video" playsinline muted></video>
+    <canvas id="overlay"></canvas>
+  </aside>
+
+  <section id="startScreen">
+    <div class="card">
+      <h1>Gesture Deck</h1>
+      <p>Present with your hands. Your camera feed is processed in your browser and never uploaded.</p>
+      <ul>
+        <li><b>Swipe</b> an open palm left or right to change slides</li>
+        <li><b>Point</b> your index finger for a laser pointer</li>
+        <li><b>Pinch and hold</b> to zoom into a spot</li>
+        <li><b>Fist for 1 second</b> to lock or unlock gestures</li>
+      </ul>
+      <button id="startBtn">Start camera</button>
+      <p class="hint">Keys: arrows to navigate, C calibration view, L load .md slides, F fullscreen</p>
+    </div>
+  </section>
+
+  <input id="fileInput" type="file" accept=".md,.txt" hidden>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
