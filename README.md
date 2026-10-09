@@ -4,7 +4,7 @@ Present slides with your hands. Swipe to change slides, point to get a laser poi
 
 <!-- Add a demo GIF here: ![Gesture Deck demo](demo.gif) -->
 
-**Live demo:** https://anshikaaaasingh-afk.github.io/gesture-deck
+**Live demo:** https://anshikaaaasingh-afk.github.io/Gester-deck/
 
 ## Gestures
 
